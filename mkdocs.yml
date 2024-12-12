@@ -18,6 +18,7 @@ nav:
 theme:
   name: material
   logo: assets/dots-logo-retro.drawio.png
+  favicon: assets/favicon-dots-circle.drawio.png
   custom_dir: docs/overrides
   features:
     - navigation.indexes

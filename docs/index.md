@@ -13,13 +13,19 @@ La présente documentation indique :
 
 ## Code source
 
-Le code source de **DoTS** est disponible sous license MIT sur github à l'adresse suivante : <a href="https://github.com/chartes/dots" target="_blank">https://github.com/chartes/dots</a>.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/chartes/dots/blob/master/LICENSE.md)
+
+Le code source de **DoTS** est disponible sous license MIT sur GitHub à l'adresse suivante : <a href="https://github.com/chartes/dots" target="_blank">https://github.com/chartes/dots</a>.
 
 La version actuelle respecte la dernière version 1-alpha de la spécification DTS.
 
 ## Testez DoTS !
 
-Si vous souhaitez tester notre résolveur DTS, les différents endpoints sont présentés [ici](api.md). 
+![](https://validator.swagger.io/validator?url=https://chartes.github.io/dots_documentation/api/openapi.json)
+
+Si vous souhaitez tester notre résolveur DTS, les différents endpoints sont présentés dans la documentation OpenAPI 3.0 [disponible ici](api.md). 
+
+
 Le serveur de démo est aussi directement accessible à l'adresse suivante : <a href="https://dots.chartes.psl.eu/demo/api/dts/" target="_blank">https://dots.chartes.psl.eu/demo/api/dts/</a>.
 
 Les corpus qui s'y trouvent sont ceux présentés dans le [cookbook](cookbook/index.md) de cette documentation.

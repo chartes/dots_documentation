@@ -130,3 +130,24 @@
 blockquote {
     font-size: 0.7rem;
 }
+
+/* API Swagger overrides styles */
+
+
+
+
+
+div.info .md-typeset pre > code {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+div.operation-tag-content pre > code {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+
+div.operation-tag-content .language-json > .hljs-attr {
+    color: white !important;
+}

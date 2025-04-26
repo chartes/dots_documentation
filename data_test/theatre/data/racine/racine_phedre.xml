@@ -832,7 +832,7 @@
             <l n="463" xml:id="l0463" part="I">Il vient à vous.</l>
           </sp>
         </div>
-        <div type="scène" n="2" xml:id="a2-s2">
+        <div type="scene" n="2" xml:id="a2-s2">
           <head rend="uc">Scène II</head>
           <stage>Hippolyte, Aricie, Ismène.</stage>
           <sp who="#hippolyte" xml:id="a2-s2_01">
@@ -1639,7 +1639,7 @@
             <l n="987" xml:id="l0987">Que Phèdre explique enfin le trouble où je la vois.</l>
           </sp>
         </div>
-        <div type="scène" n="6" xml:id="a3-s6">
+        <div type="scene" n="6" xml:id="a3-s6">
           <head rend="uc">Scène VI</head>
           <stage>Hippolyte, Théramène.</stage>
           <sp who="#hippolyte" xml:id="a3-s6_01">

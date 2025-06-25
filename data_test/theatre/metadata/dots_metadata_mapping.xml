@@ -4,7 +4,7 @@
   xmlns:dct="http://purl.org/dc/terms/"
   xmlns:html="http://www.w3.org/1999/xhtml">
   <mapping>
-    <dc:title  scope="collection" format="tsv" source="./default_collections_titles.tsv" resourceId="collection_id" value="title"/>
+    <dc:title  scope="collection" format="tsv" source="./default_collections_titles.tsv" value="title"/>
     <dc:title scope="document" xpath="/TEI/teiHeader/fileDesc/titleStmt/title"/>
     <dc:creator scope="document" xpath="/TEI/teiHeader/fileDesc/titleStmt/author/@key"/>
     <creator_wikidata_url scope="document" xpath="/TEI/teiHeader/fileDesc/titleStmt/author/@ref"/>

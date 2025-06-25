@@ -34,7 +34,7 @@ Using DoTS, you can
 
 ### BaseX
 
-Download BaseX (>= 10.0): <a href="https://basex.org/download/" target="_blank">https://basex.org/download/</a>
+Download BaseX (>= 11.8): <a href="https://basex.org/download/" target="_blank">https://basex.org/download/</a>
 
 !!! info
 
@@ -44,34 +44,37 @@ Download BaseX (>= 10.0): <a href="https://basex.org/download/" target="_blank">
 
 ### DoTS
 
-DoTS must be installed and started directly in the BaseX folder. 
+DoTS can be installed in any folder outside the BaseX directory.
 
 ```Bash
-cd path/to/basex/webapp
+cd path/to/desired/installation/folder
 ```
 
 ```{.Bash .copy}
 git clone https://github.com/chartes/dots.git
 ```
 
-The structure of your BaseX should be as follows:
+The structure of your DoTS repository should be as follows:
 
 
-	basex/				# BaseX root dir.
-		bin/			# Start scripts (GUI, HTTP server, etc.).
+	dots/				# DoTS root dir.
 		data/			# Database directory.
+		repo/			# XQuery module (DTS backend, DTS resolver, etc.).
+		schema/         # Relax NG schemas for validating DoTS registers.
+		scripts/		# bash and XQuery scripts to manage a DoTS project.
+		tests/			# XQuery unit tests for continuous integration.
 		webapp/			# Web Application directory.
-			dots/		# DoTS module (DTS reslover, etc.).
+			restxq/		# RESTXQ folder containing the API routes
 		...				# Others BaseX files.
 
 ## Start DTS resolver
 
 ```Bash
-cd path/to/basex/bin
+cd path/to/dots
 ```
 
 ```{.Bash .copy}
-bash basexhttp
+bash /path/to/basex/bin/basexhttp
 ```
 
 By default, the base DTS API enpoint is available at <a href="http://localhost:8080/api/dts/" target="_blank">http://localhost:8080/api/dts/</a>.

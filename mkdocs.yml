@@ -8,6 +8,7 @@ nav:
     - Installation: installation.md
     - Publier un corpus: publishing-workflow.md
     - Dossier de dépôt: dots-project-folder.md
+    - Fonctionnalités avancées: advanced-rendering.md
     - Cookbook:
         - cookbook/index.md
         - Périodiques: cookbook/periodical.md

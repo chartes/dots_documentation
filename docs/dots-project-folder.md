@@ -90,30 +90,6 @@ Vous pouvez structurer vos documents en collections et sous-collections hiérarc
 					tartuffe.xml
 	```
 
-
-<!--
-#### Id et titre des collections
-
-**Le nom du dossier de collection est retenu comme identifiant de la collection.**  
-Il est donc recommandé de ne pas utiliser d’espace ou de diacritique pour le nommage de ces dossiers. Un plan de nommage de ces dossiers de collection peut utilement documenter un dossier de dépôt dans le `README.md`.
-
-Par défaut, le nom des dossiers de collection sert aussi de titre (`dc:title`). Il est recommandé de déclarer dans un fichier TSV le titre des collections (ainsi que toutes les métadonnées utiles à leur description).
-
-
-#### Id et titre des documents
-
-Pour un document, l’identifiant retenu par ordre de priorité est :
-
-1. la valeur de l’attribut `@xml:id` de la racine `TEI` du fichier si elle est renseignée ;
-1. le nom du fichier (sans l’extension `.xml`).
-
-
-Pour un document, le titre (`dc:title`) retenu par ordre de priorité est :
-
-1. la valeur renseignée dans `dots_metadata_mapping.xml` (optionnel) ;
-1. la valeur renseignée dans le `teiHeader`, par défaut `titleStmt/title` (optionnel).
- -->
-
 ### Autres collections
 
 Avec DoTS, un même document peut-être assigné à différentes collections.
@@ -183,7 +159,7 @@ Titre (`dc:title`) :
 Identifiant :
 
 1. valeur de l’attribut `/TEI/@xml:id` du fichier
-1. nom du fichier (sans l’extension `.xml`)
+1. nom du fichier
 
 Titre (`dc:title`) :
 
@@ -221,14 +197,14 @@ Pour les collections, les documents et les passages, le fichier `metadata/dots_m
 	  xmlns:dct="http://purl.org/dc/terms/"
 	  xmlns:html="http://www.w3.org/1999/xhtml">
 	  <mapping>
-	    <dc:title  scope="collection" format="tsv" source="./default_collections_titles.tsv" resourceId="id" value="title"/>
+	    <dc:title  scope="collection" format="tsv" source="./default_collections_titles.tsv" value="title"/>
 	    <dct:license scope="document" resourceId="all" value=".">https://creativecommons.org/licenses/by-nc-sa/4.0/</dct:license>
 	    <dc:title scope="document" xpath="//titleStmt/title[@type = 'main' or position() = 1]"/>
-	    <html:h1 scope="document" format="tsv" source="./documents_metadata.tsv" resourceId="id" value="title_rich"/>
-	    <dc:date  scope="document" format="tsv" source="./documents_metadata.tsv" resourceId="id" value="promotion_year" type="number"/>
-	    <dc:creator scope="document" format="tsv" source="./documents_metadata.tsv" resourceId="id" value="author_fullname_label"></dc:creator>
-	    <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" resourceId="id" value="author_idref_ppn" prefix="https://www.idref.fr/" key="@id"/>
-	    <dct:extent scope="document" format="tsv" source="./documents_metadata.tsv" resourceId="id" value="pagination"/>
+	    <html:h1 scope="document" format="tsv" source="./documents_metadata.tsv" value="title_rich"/>
+	    <dc:date  scope="document" format="tsv" source="./documents_metadata.tsv" value="promotion_year" type="number"/>
+	    <dc:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_fullname_label"></dc:creator>
+	    <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_idref_ppn" prefix="https://www.idref.fr/" key="@id"/>
+	    <dct:extent scope="document" format="tsv" source="./documents_metadata.tsv" value="pagination"/>
 	  </mapping>
 	</metadataMap>
 	```
@@ -294,7 +270,6 @@ Les métadonnées des documents, des collections et des fragments peuvent être 
 		scope="collection|document|fragment"
 		format="tsv"
 		source="./metadata_file.tsv"
-		resourceId="resourceId_column-header"
 		value="value_column-header"/>
 	```
 
@@ -306,24 +281,25 @@ Les métadonnées des documents, des collections et des fragments peuvent être 
 		scope="document" 
 		format="tsv"
 		source="./documents_metadata.tsv"
-		resourceId="doc_id" 
 		value="publication_year"/>
 	```
 
 !!! example "Exemple. `documents_metadata.tsv`"
 
-	|doc_id|titre|publication_year|
+	|id|titre|publication_year|
 	|------|-----|----------------|
 	|ENCPOS_1849_08|Wala et Louis le Débonnaire|1849|
 	|ENCPOS_1971_14|Le bestiaire héraldique au Moyen Âge|1972|
 
+!!! warning
+
+    La première colonne du tableur doit obligatoirement s'intituler `id` et contenir l'identifiant de la ressource décrite.
 
 |attribut|définition|valeur|commentaire|
 |--------|----------|------|-----------|
 |`@scope`|type des ressources décrites|`collection` ou `document` ou `fragment`||
 |`@format`|format du fichier de métadonnées appelé|`tsv`||
 |`@source`|chemin vers le fichier de métadonnées|`path/to/file`||
-|`@resourceId`|nom de la colonne référençant l’id de la ressource décrite|||
 |`@value`|nom de la colonne contenant la valeur de la métadonnée|||
 
 #### Métadonnées inscrites dans la source XML/TEI
@@ -374,10 +350,41 @@ Mais il est toujours possible de préciser le type de valeur attendue pour la m�
 
 ##### Utilisation de valeurs multiples
 
-L'utilisateur peut vouloir plusieurs valeurs pour une même métadonnée. Par exemple, utiliser plusieurs fois la métadonnée `dc:creator` afin de renvoyer à plusieurs référentiels.
+L'utilisateur peut vouloir plusieurs valeurs pour une même métadonnée. Par exemple, utiliser plusieurs fois la métadonnée `dct:creator` afin de renvoyer à plusieurs référentiels.
 
 Dans ce cas de figure, il est **obligatoire** d'ajouter un attribut supplémentaire `@key` qui permet de créer une **liste** de valeurs dans la réponse d'API en JSON. Chaque élément de cette liste est précédée d'une *clef* dont la valeur est spécifiée dans cet attribut `@key`.
 
+Par exemple :
+
+!!! example "Exemple. Appel de plusieurs **creator** (`dct:creator`)"
+
+    ```xml
+        <dct:creator 
+		    scope="document" 
+		    format="csv" 
+            source="./path/to/tsv" 
+            value="creator_idref" key="@id"/>
+        <dct:creator 
+		    scope="document" 
+		    format="csv" 
+            source="./path/to/tsv" 
+            value="creator_data_bnf" key="@id"/>
+    ```
+
+Cet exemple permettrait d'avoir une réponse `json` de ce type :
+
+!!! example "Extrait de réponse `json`"
+    
+    ```json
+         "dct:creator": [
+          {
+            "@id": "https://www.idref.fr/26798441"
+          },
+          {
+            "@id": "https://data.bnf.fr/ark:/12148/cb11897617m"
+          }
+        ]
+    ```
 
 ##### Concaténation de chaînes de caractères
 

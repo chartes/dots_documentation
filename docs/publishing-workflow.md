@@ -79,10 +79,10 @@ Pour bien illustrer toutes les potentialités offertes par DTS et DoTS, un [cook
 
 ## Gestion d’un projet
 
-Pour lancer les commandes, il est nécessaire de se déplacer dans le dossier `dots`.
+Pour lancer les commandes, il est nécessaire de se placer dans le dossier `dots`.
 
 ```bash
-cd path/to/basex/webapp/dots
+cd path/to/dots
 ```
 
 ### Création d’un projet
@@ -96,8 +96,6 @@ usage: scripts/project_create.sh
 	--project_dir_path string
 	--top_collection_id string
 	--db_name string 
-	--cleanOption (facultatif)
-	--delete (facultatif)
 ```
 
 Arguments :
@@ -110,7 +108,7 @@ Arguments :
 !!! warning
 
 	**La base de données du *projet* ne DOIT PAS être ouverte dans le GUI BaseX.**
-[README.md](../README.md)
+<!-- [README.md](../README.md) -->
 
 Exemple : 
 
@@ -178,7 +176,7 @@ Arguments :
 Exemple :
 
 ```{.Bash .copy}
-bash project_delete.sh --basex_path '/path/to/basex/bin' --db_name 'name'
+bash scripts/project_delete.sh --basex_path '/path/to/basex/bin' --db_name 'name'
 ```
 
 

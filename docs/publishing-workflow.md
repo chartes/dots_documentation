@@ -79,10 +79,10 @@ Pour bien illustrer toutes les potentialités offertes par DTS et DoTS, un [cook
 
 ## Gestion d’un projet
 
-Pour lancer les commandes, il est nécessaire de se déplacer dans le dossier `dots/scripts`.
+Pour lancer les commandes, il est nécessaire de se déplacer dans le dossier `dots`.
 
 ```bash
-cd path/to/basex/webapp/dots/scripts
+cd path/to/basex/webapp/dots
 ```
 
 ### Création d’un projet
@@ -91,29 +91,38 @@ Cette commande crée un projet DoTS à partir d’un dossier de dépôt.
 
 
 ```{.Bash}
-usage: project_create.sh
+usage: scripts/project_create.sh
+	--basex_path string
 	--project_dir_path string
 	--top_collection_id string
 	--db_name string 
+	--cleanOption (facultatif)
+	--delete (facultatif)
 ```
 
 Arguments :
 
-- `project_dir_path` : chemin absolu en local vers le *dossier de dépôt* du projet
-- `top_collection_id` : identifiant DTS de la collection racine du *projet*
-- `db_name` : nom de la base de données du *projet*
+- `basex_path` : chemin absolu en local vers le répertoire `bin` de BaseX
+- `project_dir_path` : chemin absolu en local vers le *dossier de dépôt* du projet
+- `top_collection_id` : identifiant DTS de la collection racine du *projet*
+- `db_name` : nom de la base de données du *projet*
 
 !!! warning
 
 	**La base de données du *projet* ne DOIT PAS être ouverte dans le GUI BaseX.**
-
+[README.md](../README.md)
 
 Exemple : 
 
 ```{.Bash .copy}
-bash project_create.sh --project_dir_path '/path/to/import/folder' --top_collection_id 'id' --db_name 'name'
+bash scripts/project_create.sh --basex_path '/path/to/basex/bin' --project_dir_path '/path/to/import/folder' --top_collection_id 'id' --db_name 'name'
 ```
+!!! tip
 
+	La commande bash suivante permet de mettre à jour un projet DoTS en le supprimant puis en le recréant :
+	```{.Bash .copy}
+	bash scripts/project_create.sh --basex_path '/path/to/basex/bin' --project_dir_path '/path/to/import/folder' --top_collection_id 'id' --db_name 'name' --cleanOption 'true' --delete 'true'
+	```
 
 NB. La base de données *projet* est créée en conservant la structure du dossier de dépôt en collections et sous-collections. 
 
@@ -132,11 +141,12 @@ DoTS permet d’associer un document à plusieurs collections. Pour un projet, c
 
 
 ```{.Bash .copy}
-bash custom_collections.sh --collections_tsv_path string
+bash custom_collections.sh --basex_path string --collections_tsv_path string
 ```
 
 Argument :
 
+- `basex_path` : chemin absolu en local vers le répertoire `bin` de BaseX
 - `collections_tsv_path` : chemin absolu en local vers le fichier TSV décrivant ces collections. Ce fichier doit être conforme aux recommandations – voir [Dossier de dépôt/Autres collections](http://127.0.0.1:8000/dots-project-folder/#autres-collections).
 
 
@@ -146,12 +156,14 @@ Cette commande efface des registres DoTS les ressources du projet et supprime op
 
 ```{.Bash}
 usage: project_delete.sh
+	--basex_path string
 	--db_name string 
 	--db_delete boolean
 ```
 
 Arguments :
 
+- `basex_path` : chemin absolu en local vers le répertoire `bin` de BaseX
 - `db_name` : nom de la base de données du *projet*
 - `db_delete` : booléen
 	- `true` (*default*): la base de données du projet est supprimée
@@ -166,7 +178,7 @@ Arguments :
 Exemple :
 
 ```{.Bash .copy}
-bash project_delete.sh --db_name 'name'
+bash project_delete.sh --basex_path ''/path/to/basex/bin'' --db_name 'name'
 ```
 
 

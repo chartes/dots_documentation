@@ -61,11 +61,11 @@ The structure of your DoTS repository should be as follows:
 		data/			# Database directory.
 		repo/			# XQuery module (DTS backend, DTS resolver, etc.).
 		schema/         # Relax NG schemas for validating DoTS registers.
-		scripts/		# bash and XQuery scripts to manage a DoTS project.
+		scripts/		# Bash and XQuery scripts to manage a DoTS project.
 		tests/			# XQuery unit tests for continuous integration.
 		webapp/			# Web Application directory.
-			restxq/		# RESTXQ folder containing the API routes
-		...				# Others BaseX files.
+			restxq/		# RESTXQ folder containing the API routes.
+		...				# Others files.
 
 ## Start DTS resolver
 
@@ -73,7 +73,7 @@ The structure of your DoTS repository should be as follows:
 cd path/to/dots
 ```
 
-```{.Bash .copy}
+```Bash
 bash /path/to/basex/bin/basexhttp
 ```
 

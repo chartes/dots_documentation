@@ -178,7 +178,7 @@ Arguments :
 Exemple :
 
 ```{.Bash .copy}
-bash project_delete.sh --basex_path ''/path/to/basex/bin'' --db_name 'name'
+bash project_delete.sh --basex_path '/path/to/basex/bin' --db_name 'name'
 ```
 
 

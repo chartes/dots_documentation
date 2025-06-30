@@ -253,7 +253,7 @@ Accéder au **document** complet au format XML/TEI :
 
 Accéder au **document** complet au format HTML : 
 
-> Pour bénéficier d'une version HTML, c'est à l'éditeur de fournir les feuilles de transformation XSLT.
+> Pour bénéficier d'une version HTML, c'est à l'éditeur de fournir les feuilles de transformation XSLT (cf. la page [Fonctionnalités avancées](advanced-rendering.md)).
 
 {{ macro_collapse_card_api_doc(
   verb_http="get",

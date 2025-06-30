@@ -262,7 +262,8 @@ Ces métadonnées – label et liage Wikidata du locuteur – sont ainsi accessi
 Pour créer la base de données, il suffit de saisir la commande :
 
 ```bash
-bash project_create.sh
+bash scripts/project_create.sh
+	--basex_path '/absolute/path/to/basex/bin'
 	--project_dir_path 'path/to/dots_documentation/data_test/theatre'
 	--top_collection_id 'theater'
 	--db_name 'theater'
@@ -288,10 +289,11 @@ Puis de lancer la commande suivante.
 
 Argument à spécifier :
 
+- `basex_path` : chemin absolu vers le dossier `basex/bin` 
 - `collections_tsv_path` : chemin absolu vers le fichier TSV de métadonnées de collections
 
 ```{.Bash .copy} 
-bash custom_collections.sh --collections_tsv_path path/to/tsv/file
+bash scripts/custom_collections.sh --basex_path /absolute/path/to/basex/bin  --collections_tsv_path path/to/tsv/file
 ```
 
 {{ macro_collapse_card_api_doc(
@@ -343,4 +345,4 @@ Quelques exemples :
 
 !!! warning
 
-	Pour bénéficier d'une version HTML d'un document ou d'un fragment, il est indispensable de fournir une feuille XSLT dans le dossier `path/to/basex/webapp/static/transform/hteiml`. Le chemin peut être modifié en changeant la variable `$G:xsl` du fichier `globals.xqm`. Le nom de la feuille XSLT doit être `tei2html.xsl`.
+	Pour bénéficier d'une version HTML d'un document ou d'un fragment, il est nécessaire d'installer une feuille de transformation XSLT. La page [Fonctionnalités avancées](../advanced-rendering.md) explique la procédure à suivre.

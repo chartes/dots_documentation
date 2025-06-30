@@ -3,7 +3,7 @@
 
 Pour publier une collection de documents <a href="https://www.tei-c.org/" target="_blank">TEI</a>, il suffit de charger un *dossier de dépôt* conforme aux recommandations DoTS.
 
-Cette page décrit le *worflow* de publication, les recommandations DoTS de structuration de ce *dossier de dépôt*, et la procédure de création et de gestion d'un *projet*.
+Cette page décrit le *workflow* de publication, les recommandations DoTS de structuration de ce *dossier de dépôt*, et la procédure de création et de gestion d'un *projet*.
 
 ## Introduction
 
@@ -139,9 +139,8 @@ DoTS permet d’associer un document à plusieurs collections. Pour un projet, c
 
 
 ```{.Bash .copy}
-bash custom_collections.sh --basex_path string --collections_tsv_path string
+bash scripts/custom_collections.sh --basex_path string --collections_tsv_path string
 ```
-
 Argument :
 
 - `basex_path` : chemin absolu en local vers le répertoire `bin` de BaseX
@@ -153,7 +152,7 @@ Argument :
 Cette commande efface des registres DoTS les ressources du projet et supprime optionnellement sa base de données.
 
 ```{.Bash}
-usage: project_delete.sh
+usage: scripts/project_delete.sh
 	--basex_path string
 	--db_name string 
 	--db_delete boolean

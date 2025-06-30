@@ -38,7 +38,7 @@ D'autres exemples vont venir en complément.
 
 Tous les corpus mis à disposition par l'école sont disponibles sur notre serveur <a href="https://dots.chartes.psl.eu/api/dts/collection" target="_blank">DoTS</a>.
 
-Actuellement,seul le corpus des <a href="https://dots.chartes.psl.eu/api/dts/collection?id=ENCPOS" target="_blank">Positions de thèses de l'École nationale des chartes</a> est accessible, accompagné d'une <a href="https://theses.chartes.psl.eu/" target="_blank">application d'édition</a>. 
+Actuellement, seul le corpus des <a href="https://dots.chartes.psl.eu/api/dts/collection?id=ENCPOS" target="_blank">Positions de thèses de l'École nationale des chartes</a> est accessible, accompagné d'une <a href="https://theses.chartes.psl.eu/" target="_blank">application d'édition</a>. 
 
 ### Autres corpus
 

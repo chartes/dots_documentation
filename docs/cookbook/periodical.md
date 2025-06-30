@@ -174,7 +174,8 @@ Il permet de déclarer la structure du document TEI et de retrouver des fragment
 Pour créer la base de données, il suffit de saisir la commande :
 
 ```bash
-bash project_create.sh
+bash scripts/project_create.sh
+  --basex_path '/absolute/path/to/basex/bin'
   --project_dir_path 'path/to/dots_documentation/data_test/periodiques/encpos_by_abstract'
   --top_collection_id 'ENCPOS'
   --db_name 'encpos'
@@ -186,19 +187,21 @@ Un document peut appartenir à plusieurs collections. Mais c'est dans un second 
 
 Il est nécessaire pour cela de préparer un tableur TSV sur le modèle de `custom_collections.tsv` puis de lancer la commande suivante.
 
-Argument à spécifier :
+Arguments à spécifier :
 
+- `basex_path` : chemin absolu vers le dossier `bin` de BaseX
 - `collections_tsv_path` : chemin absolu vers le fichier TSV de métadonnées de collections
 
 ```{.Bash .copy} 
-usage: custom_collections.sh 
+usage: scripts/custom_collections.sh
+    --basex_path string 
     --collections_tsv_path string 
 ```
 
 Exemple
 
 ```{Bash}
-bash custom_collections.sh --collections_tsv_path 'path/to/tsv/file'
+bash scripts/custom_collections.sh --basex_path '/absolute/path/to/basex/bin' --collections_tsv_path 'path/to/tsv/file'
 ```
 
 {{ macro_collapse_card_api_doc(
@@ -252,6 +255,7 @@ Le corpus de test est disponible : <a href="https://github.com/chartes/dots_docu
       metadata/
         default_resources_titles.tsv
         dots_metadata_mapping.xml     # métadonnées des collections et des documents
+        fragments_metadata.tsv        
       README.md
     ```
 
@@ -279,6 +283,13 @@ Il contient les métadonnées descriptives : `default_resources_titles.tsv` per
 {{ macro_collapse_card_api_doc(
   verb_http="get", 
   url="https://dots.chartes.psl.eu/demo/api/dts/collection?id=ENCPOS_c2")
+}}
+
+`fragments_metadata.tsv` permet de lister des métadonnées complémentaires pour les fragments des documents/
+
+{{ macro_collapse_card_api_doc(
+  verb_http="get", 
+  url="https://dots.chartes.psl.eu/api/dts/navigation?resource=ENCPOS_1972_c2&down=1")
 }}
 
 #### Déclaration des fragments
@@ -311,7 +322,8 @@ L'élément `<citeStructure>` ( <a href="https://www.tei-c.org/release/doc/tei-p
 Pour créer la base de données, il suffit de saisir la commande :
 
 ```bash
-bash project_create.sh
+bash scripts/project_create.sh
+  --basex_path '/absolute/path/to/basex/bin'
   --project_dir_path 'path/to/dots_documentation/data_test/periodiques/encpos_by_volume'
   --top_collection_id 'ENCPOS_c2'
   --db_name 'encpos_c2'

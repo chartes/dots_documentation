@@ -1,4 +1,4 @@
-# Publier un corpus avec DoTS
+# Ouvrir un corpus avec DoTS
 
 
 Pour publier une collection de documents <a href="https://www.tei-c.org/" target="_blank">TEI</a>, il suffit de charger un *dossier de dépôt* conforme aux recommandations DoTS.

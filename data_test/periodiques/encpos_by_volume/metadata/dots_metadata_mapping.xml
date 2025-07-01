@@ -6,6 +6,7 @@
   <mapping>
     <!-- collections -->
     <dc:title scope="collection" format="csv" source="./default_resources_titles.tsv" value="title"/>
+    <description scope="collection" format="csv" source="./default_resources_titles.tsv" value="description"/>
     <dct:license scope="collection" resourceId="all" value=".">https://creativecommons.org/licenses/by/4.0/</dct:license>
     <!-- documents -->
     <dc:title  scope="document" format="csv" source="./default_resources_titles.tsv" value="title"/>

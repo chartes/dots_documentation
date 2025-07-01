@@ -1,4 +1,4 @@
-id	title
-theater	Collection de théâtre classique
-moliere	Trois pièces de Molière
-racine	Deux tragédies de Racine
+id	title	description
+theater	Collection de théâtre classique	Publier une pièce de théâtre. Cette recette détaille les possibilités offertes par DoTS pour la publication de pièces de théâtre. L’objectif est de pouvoir décrire, citer et republier un acte, une scène, un tour de parole, une strophe, un vers. On apprend aussi à gérer la profondeur de la table des matières.
+moliere	Trois pièces de Molière	
+racine	Deux tragédies de Racine	

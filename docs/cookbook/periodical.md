@@ -193,7 +193,7 @@ Arguments à spécifier :
 - `collections_tsv_path` : chemin absolu vers le fichier TSV de métadonnées de collections
 
 ```{.Bash .copy} 
-usage: scripts/custom_collections.sh
+usage: bash scripts/custom_collections.sh
     --basex_path string 
     --collections_tsv_path string 
 ```

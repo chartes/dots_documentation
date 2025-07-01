@@ -91,7 +91,7 @@ Cette commande crée un projet DoTS à partir d’un dossier de dépôt.
 
 
 ```{.Bash}
-usage: scripts/project_create.sh
+usage: bash scripts/project_create.sh
 	--basex_path string
 	--project_dir_path string
 	--top_collection_id string
@@ -152,7 +152,7 @@ Argument :
 Cette commande efface des registres DoTS les ressources du projet et supprime optionnellement sa base de données.
 
 ```{.Bash}
-usage: scripts/project_delete.sh
+usage: bash scripts/project_delete.sh
 	--basex_path string
 	--db_name string 
 	--db_delete boolean

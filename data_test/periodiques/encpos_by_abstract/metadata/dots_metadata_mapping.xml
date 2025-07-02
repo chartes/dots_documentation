@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metadataMap xmlns="https://github.com/chartes/dots/"
+<dots:metadataMap xmlns:dots="https://github.com/chartes/dots/"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dct="http://purl.org/dc/terms/"
   xmlns:html="http://www.w3.org/1999/xhtml">
-  <mapping>
+  <dots:mapping>
     <!-- collections -->
     <dc:title  scope="collection" format="tsv" source="./default_collections_titles.tsv" value="title"/>
     <description  scope="collection" format="tsv" source="./default_collections_titles.tsv" value="description"/>
@@ -15,6 +15,7 @@
     <dc:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_fullname_label"/>
     <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_idref_ppn" prefix="https://www.idref.fr/" key="@id"/>
     <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_bnf_ark" prefix="https://data.bnf.fr/" key="@id"/>
+    <dots:iiifManifestId scope="document" xpath="/TEI/teiHeader/fileDesc/sourceDesc/@facs"/>
     <dct:extent scope="document" format="tsv" source="./documents_metadata.tsv" value="pagination"/>
-  </mapping>
-</metadataMap>
+  </dots:mapping>
+</dots:metadataMap>

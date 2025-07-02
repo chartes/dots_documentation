@@ -15,7 +15,7 @@
     <dc:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_fullname_label"/>
     <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_idref_ppn" prefix="https://www.idref.fr/" key="@id"/>
     <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_bnf_ark" prefix="https://data.bnf.fr/" key="@id"/>
-    <dots:iiifManifestId scope="document" xpath="/TEI/teiHeader/fileDesc/sourceDesc/@facs"/>
+    <dots:iiifManifestId scope="document" xpath="if (//sourceDesc/@facs) then let $id := lower-case(/TEI/@xml:id) return concat('https://iiif.chartes.psl.eu/encpos/', $id, '/manifest') else ()"/>
     <dct:extent scope="document" format="tsv" source="./documents_metadata.tsv" value="pagination"/>
   </dots:mapping>
 </dots:metadataMap>

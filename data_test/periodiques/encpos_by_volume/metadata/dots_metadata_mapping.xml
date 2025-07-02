@@ -12,7 +12,7 @@
     <dc:title  scope="document" format="csv" source="./default_resources_titles.tsv" value="title"/>
     <html:h1 scope="document" format="csv" source="/./fragments_metadata.tsv" value="title_rich"/>
     <dct:license scope="document" resourceId="all" value=".">https://creativecommons.org/licenses/by-nc-sa/4.0/</dct:license>
-    <dots:iiifManifestId scope="document" xpath="/TEI/teiHeader/fileDesc/sourceDesc/@facs"/>
+    <dots:iiifManifestId scope="document" xpath="if (//sourceDesc/@facs) then let $id := lower-case(/TEI/@xml:id) return concat('https://iiif.chartes.psl.eu/encpos/', $id, '/manifest') else ()"/>
     <download scope="document" xpath="let $id := /TEI/@xml:id return concat('https://dev.chartes.psl.eu/dots/api/dts/document?resource=', $id)" key="XML"/>
     <download scope="document" xpath="//sourceDesc/@facs" key="PDF"/>
     <!-- fragments -->

@@ -289,7 +289,7 @@ Il contient les métadonnées descriptives : `default_resources_titles.tsv` per
 
 {{ macro_collapse_card_api_doc(
   verb_http="get", 
-  url="https://dots.chartes.psl.eu/api/dts/navigation?resource=ENCPOS_1972_c2&down=1")
+  url="https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=ENCPOS_1972_c2&down=1")
 }}
 
 #### Déclaration des fragments

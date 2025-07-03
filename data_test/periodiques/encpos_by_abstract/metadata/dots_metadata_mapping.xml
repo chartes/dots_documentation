@@ -17,5 +17,7 @@
     <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_bnf_ark" prefix="https://data.bnf.fr/" key="@id"/>
     <dots:iiifManifestId scope="document" xpath="if (//sourceDesc/@facs) then let $id := lower-case(/TEI/@xml:id) return concat('https://iiif.chartes.psl.eu/encpos/', $id, '/manifest') else ()"/>
     <dct:extent scope="document" format="tsv" source="./documents_metadata.tsv" value="pagination"/>
+    <dots:download scope="document" xpath="let $id := /TEI/@xml:id return concat('https://dots.chartes.psl.eu/demo/api/dts/document?resource=', $id)" key="XML"/>
+    <dots:download scope="document" xpath="//sourceDesc/@facs" key="PDF"/>
   </dots:mapping>
 </dots:metadataMap>

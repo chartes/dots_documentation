@@ -1,5 +1,5 @@
 id	title	description
-ENCPOS	Les positions des thèses de l'Ecole nationale des chartes	Publier un périodique (méthode 1). Un périodique est une publication régulière et collective, par exemple les actes annuels d’une conférence. Nous prenons ici l’exemple de la publication annuelle des résumés des thèses de l’École des chartes. Cette recette (ENCPOS) illustre une manière de publier un périodique, avec un fichier XML/TEI pour chaque résumé. Le volume annuel des résumés est une collection.
-ENCPOS_1849	Les positions des thèses de l'Ecole nationale des chartes de 1849	
-ENCPOS_1971	Les positions des thèses de l'Ecole nationale des chartes de 1971	
-ENCPOS_1972	Les positions des thèses de l'Ecole nationale des chartes de 1972	
+ENCPOS	Positions des thèses de l'Ecole des chartes (cas 1)	Publier un périodique (méthode 1). Un périodique est une publication régulière et collective, par exemple les actes annuels d’une conférence. Nous prenons ici l’exemple de la publication annuelle des résumés des thèses de l’École des chartes. Cette recette (ENCPOS) illustre une manière de publier un périodique, avec un fichier XML/TEI pour chaque résumé. Le volume annuel des résumés est une collection.
+ENCPOS_1849	Positions des thèses 1849	
+ENCPOS_1971	Positions des thèses 1971	
+ENCPOS_1972	Positions des thèses 1972	

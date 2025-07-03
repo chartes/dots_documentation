@@ -13,7 +13,7 @@
     <html:h1 scope="document" format="csv" source="/./fragments_metadata.tsv" value="title_rich"/>
     <dct:license scope="document" resourceId="all" value=".">https://creativecommons.org/licenses/by-nc-sa/4.0/</dct:license>
     <dots:download scope="document" xpath="let $id := /TEI/@xml:id return concat('https://dots.chartes.psl.eu/demo/api/dts/document?resource=', $id)" key="XML"/>
-    <dots:download scope="document" xpath="//sourceDesc/@facs" key="PDF"/>
+    <dc:relation scope="document" xpath="/TEI/teiHeader/fileDesc/sourceDesc/@facs"/>
     <!-- fragments -->
     <dc:date  scope="fragment" format="csv" source="./fragments_metadata.tsv" value="promotion_year" type="number"/>
     <dc:creator scope="fragment" format="csv" source="./fragments_metadata.tsv" value="author_fullname_label"></dc:creator>

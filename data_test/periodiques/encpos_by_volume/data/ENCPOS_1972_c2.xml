@@ -24,7 +24,7 @@
         <idno type="ISSN">0755-2076</idno>
         <idno type="URI">http://www.sudoc.fr/013565311</idno>
       </seriesStmt>
-      <sourceDesc facs="https://iiif.chartes.psl.eu/collections/encpos/encpos_1972.json">
+      <sourceDesc corresp="https://iiif.chartes.psl.eu/collections/encpos/encpos_1972.json">
         <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>.</bibl>
       </sourceDesc>
     </fileDesc>
@@ -32,8 +32,11 @@
       <refsDecl>
         <citeStructure unit="position" match="/TEI/text/body/div[@type='position']" use="@xml:id">
           <citeData use="head" property="dc:title"/>
-          <citeStructure unit="chapter" match="div" use="position()">
+          <citeStructure unit="partie" match="div" use="default">
             <citeData use="head" property="dc:title"/>
+            <citeStructure unit="chapitre" match="div" use="default">
+              <citeData use="head" property="dc:title"/>
+            </citeStructure>
           </citeStructure>
         </citeStructure>
       </refsDecl>

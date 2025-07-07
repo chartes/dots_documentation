@@ -24,7 +24,7 @@
         <idno type="ISSN">0755-2076</idno>
         <idno type="URI">http://www.sudoc.fr/013565311</idno>
       </seriesStmt>
-      <sourceDesc facs="https://iiif.chartes.psl.eu/collections/encpos/encpos_1849.json">
+      <sourceDesc corresp="https://iiif.chartes.psl.eu/collections/encpos/encpos_1849.json">
         <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1849 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1849</date>.</bibl>
       </sourceDesc>
     </fileDesc>

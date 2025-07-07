@@ -31,7 +31,8 @@
             <citeData use="head" property="dc:title"/>
             <citeData use="stage" property="tei:castList"/>
             <citeStructure match="sp" use="@xml:id" unit="individual_speech">
-              <citeData use="substring-after(@who, '#')" property="tei:role"/>
+              <citeData use="let $w := substring-after(@who, '#') let $r := ancestor::TEI/text/front/div/castList/castItem/role[@xml:id = $w] return $r" property="tei:role"/>
+              <citeData use="let $w := substring-after(@who, '#') let $r := ancestor::TEI/text/front/div/castList/castItem/role[@xml:id = $w]/name/@ref return $r" property="character_QID"/>
               <citeStructure match="l" use="@xml:id" unit="verse">
                 <citeData use="@n" property="tei:num"/>
               </citeStructure>

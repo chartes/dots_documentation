@@ -14,7 +14,13 @@
     <dc:date  scope="document" format="tsv" source="./documents_metadata.tsv" value="promotion_year" type="number"/>
     <dc:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_fullname_label"/>
     <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_idref_ppn" prefix="https://www.idref.fr/" key="@id"/>
-    <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_bnf_ark" prefix="https://data.bnf.fr/" key="@id"/>
+    <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_bnf_ark" prefix="https://data.bnf.fr/" key="@id"/>  
+    <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_wikidata_id" prefix="https://wikidata.org/entity/" key="@id"/>
+    <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_wikipedia_url" key="@id"/>
+    <dct:creator scope="document" format="tsv" source="./documents_metadata.tsv" value="author_dbpedia_id" prefix="https://dbpedia.org/resource/" key="@id"/>
+    <dct:isVersionOf scope="document" format="csv" source="./documents_metadata.tsv" value="thenca_these-record_id" prefix="http://bibnum.chartes.psl.eu/s/thenca/item/" key="@id"/>
+    <dct:isVersionOf scope="document" format="csv" source="./documents_metadata.tsv" value="benc_these-record_id" prefix="https://catalogue.chartes.psl.eu/cgi-bin/koha/opac-detail.pl?biblionumber=" key="@id"/>
+    <dct:isVersionOf scope="document" format="csv" source="./documents_metadata.tsv" value="sudoc_these-record_ppn" prefix="https://www.sudoc.fr/" key="@id"/>
     <dots:iiifManifestId scope="document" xpath="if (//sourceDesc/@facs) then let $id := lower-case(/TEI/@xml:id) return concat('https://iiif.chartes.psl.eu/encpos/', $id, '/manifest') else ()"/>
     <dct:extent scope="document" format="tsv" source="./documents_metadata.tsv" value="pagination"/>
     <dots:download scope="document" xpath="let $id := /TEI/@xml:id return concat('https://dots.chartes.psl.eu/demo/api/dts/document?resource=', $id)" key="XML"/>

@@ -15,13 +15,13 @@ La présente documentation indique :
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/chartes/dots/blob/master/LICENSE.md)
 
-Le code source de **DoTS** est disponible sous license MIT sur GitHub à l'adresse suivante : <a href="https://github.com/chartes/dots" target="_blank">https://github.com/chartes/dots</a>.
+Le code source de **DoTS** est disponible sous license MIT sur GitHub à l'adresse suivante : <a href="https://github.com/dots-suite/dots" target="_blank">https://github.com/dots-suite/dots</a>.
 
 La version actuelle respecte la dernière version 1-alpha de la spécification DTS.
 
 ## Testez DoTS !
 
-![](https://validator.swagger.io/validator?url=https://chartes.github.io/dots_documentation/api/openapi.json)
+![](https://validator.swagger.io/validator?url=https://dots-suite.github.io/dots_documentation/api/openapi.json)
 
 Si vous souhaitez tester notre résolveur DTS, les différents endpoints sont présentés dans la documentation OpenAPI 3.0 [disponible ici](api.md). 
 

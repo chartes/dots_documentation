@@ -151,3 +151,8 @@ div.operation-tag-content pre > code {
 div.operation-tag-content .language-json > .hljs-attr {
     color: white !important;
 }
+
+
+h1#documentation-home:first-child {
+  display: none;
+}

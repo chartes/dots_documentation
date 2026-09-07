@@ -1,0 +1,1493 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://dots-documentation.github.io/dts-requests-overview/">
+      
+      
+        <link rel="prev" href="../api/">
+      
+      
+      
+      <link rel="icon" href="../assets/favicon-dots-circle.drawio.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.8">
+    
+    
+      
+        <title>Exemplier - DoTS documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f2e4d321.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+      <link rel="stylesheet" href="../css/stackoverflow-light.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exemplier-de-requetes-dts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="DoTS documentation" class="md-header__button md-logo" aria-label="DoTS documentation" data-md-component="logo">
+      
+  <img src="../assets/dots-logo-retro.drawio.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DoTS documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exemplier
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DoTS documentation" class="md-nav__button md-logo" aria-label="DoTS documentation" data-md-component="logo">
+      
+  <img src="../assets/dots-logo-retro.drawio.png" alt="logo">
+
+    </a>
+    DoTS documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Présentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../publishing-workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ouvrir un corpus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dots-project-folder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dossier de dépôt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-rendering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fonctionnalités avancées
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../cookbook/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Cookbook
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Cookbook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cookbook/periodical/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Périodiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cookbook/theater/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Théâtre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DTS API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Exemplier
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Exemplier
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Définitions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modele-documentaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modèle documentaire
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint Collection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoint Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requetes-dts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requêtes DTS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-dots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options DoTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint Navigation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoint Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requetes-dts_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requêtes DTS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-dots_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options DoTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint Document
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoint Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requetes-dts_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requêtes DTS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-dots_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options DoTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Définitions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modele-documentaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modèle documentaire
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint Collection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoint Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requetes-dts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requêtes DTS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-dots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options DoTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint Navigation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoint Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requetes-dts_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requêtes DTS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-dots_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options DoTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint Document
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoint Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requetes-dts_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requêtes DTS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-dots_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options DoTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="exemplier-de-requetes-dts">Exemplier de requêtes DTS</h1>
+<p>L’objectif de cette documentation est de <strong>comprendre par l’exemple</strong> les paramètres DTS disponibles et d’appréhender les usages possibles de leurs combinaisons.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>DoTS propose une implémentation de la version <a href="https://distributed-text-services.github.io/specifications/versions/1-alpha/">1-alpha</a> de DTS pour la publication de corpus XML/TEI.  </p>
+</div>
+<h2 id="definitions">Définitions</h2>
+<ul>
+<li>Un <strong>projet</strong> est une collection DTS de premier niveau : par exemple, nous distinguons ci-dessous les projets <em>Théâtre</em> et <em>Thèses</em> qui n’ont aucun rapport éditorial ou thématique.</li>
+<li>Une <strong>collection</strong> est un regroupement éditorial déclaré (thématique, chronologique…) de documents qui peut être hiérarchique (collection de collections). Un même document peut appartenir à différentes collections.</li>
+<li>Pour DoTS, un <strong>document</strong> correspond à un fichier XML/TEI. L’éditeur est invité à définir le découpage éditorial de son corpus en documents : par exemple, dans le cas de la publication d’un périodique, il peut considérer que chaque article est un document (un fichier XML/TEI par article dans ce cas), ou que le volume est un document (un unique fichier XML/TEI pour ce volume, regroupant l’ensemble des articles qui seront alors traités comme des fragments).</li>
+<li>Un <strong>fragment</strong> correspond à un passage déclaré du document. Un fragment peut-être une scène d’une pièce de théâtre, un acte d’un cartulaire, un poème dans un recueil. Les métadonnées de ces fragments sont accessibles grâce au <em>endpoint</em> <code>Navigation</code>.</li>
+</ul>
+<h2 id="modele-documentaire">Modèle documentaire</h2>
+<p>L'essentiel des exemples présentés ci-dessous sont issus du <strong>projet</strong> <code>theater</code> dont le modèle documentaire est le suivant :</p>
+<details class="info" open="open">
+<summary>Hiérarchie documentaire</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>theatre                         projet (collection de premier niveau)
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  &gt; moliere                     collection
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    &gt; moliere_avare             document
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>      &gt; acte                    fragment
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        &gt; scène                 fragment
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>          &gt; tour de parole      fragment
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    &gt; moliere_dom-juan          document
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    &gt; moliere_tartuffe          document
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>      &gt; acte                    fragment
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        &gt; scène                 fragment
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>          &gt; tour de parole      fragment
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            &gt; vers              fragment    
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  &gt; racine                      collection
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    &gt; racine_andromaque         documment
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    &gt; racine_phedre             document
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>  &gt; comedie                     collection
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    &gt; moliere_avare             document
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    &gt; moliere_tartuffe          document
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>  &gt; tragedie                    collection
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    &gt; moliere_dom-juan          document
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    &gt; racine_andromaque         document
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    &gt; racine_phedre             document
+</span></code></pre></div>
+</details>
+<h2 id="endpoint-collection"><em>Endpoint</em> <code>Collection</code></h2>
+<p>Usages : </p>
+<ul>
+<li>Lister les membres (collections et documents) d’une collection</li>
+<li>Accéder aux métadonnées d’une collection</li>
+<li>Accéder aux métadonnées d’un document</li>
+</ul>
+<h3 id="requetes-dts">Requêtes DTS</h3>
+<p>Lister les <strong>projets</strong> disponibles : </p>
+<blockquote>
+<p>On distingue ici les différents projets (collections de premier niveau) disponibles.</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/collection" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/collection</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Lister les contenus (collections et/ou documents) du <strong>projet</strong> <em>theater</em> et leurs métadonnées : </p>
+<blockquote>
+<p>Le projet théâtre comprend 4 collections (<code>totalChildren</code>).</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/collection?id=theater" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/collection?id=theater</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Lister le contenu de la <strong>collection</strong> "<em>Trois pièces de Molière</em>" : </p>
+<blockquote>
+<p>Cette collection comprend 3 pièces dont les métadonnées sont listées.   <br />
+On constate d'après <code>maxCiteDepth</code>, que la structure éditoriale peut différer d’une pièce à l’autre (être plus ou moins profonde).</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/collection?id=moliere" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/collection?id=moliere</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Lister les métadonnées d'un <strong>document</strong> :</p>
+<blockquote>
+<p>Pour un <code>id</code> de <strong>document</strong> (<code>moliere_avare</code>), le <em>endpoint</em> <code>Collection</code> permet de lister ses métadonnées regroupées par objets, selon leur usage et espace de nom. Le premier objet regroupe les métadonnées DTS obligatoires. Il est possible de déclarer des métadonnées dans l’espace de nom de votre choix dans l’objet <code>extensions</code>, par ex. ici une licence (<code>dct:license</code>).  </p>
+<p>La structure éditoriale est explictée ici (<code>citationTrees</code>). Elle est aussi disponible via le <em>endpoint</em> <code>Navigation</code>.</p>
+<p>Le document et ses fragments sont disponibles en XML/TEI et HTML (<code>mediaTypes</code>).</p>
+<p>On constate enfin que cette pièce dépend de 2 collections différentes (<code>totalParents</code>).</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/collection?id=moliere_avare" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/collection?id=moliere_avare</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Lister les collections auxquelles le <strong>document</strong> <code>moliere_avare</code> appartient : </p>
+<blockquote>
+<p>Ici, <em>L'Avare</em> est membre des collections <em>Trois pièces de Molière</em> et <em>Les comédies</em>.<br />
+Il est possible de changer le "sens de circulation" pour accéder aux informations concernant les parents d'une ressource (<code>&amp;nav=parents</code>) et non plus ses enfants (par défaut).</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/collection?id=moliere_avare&nav=parents" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/collection?id=moliere_avare&nav=parents</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<h3 id="options-dots">Options DoTS</h3>
+<p>Lister les <strong>documents</strong> de la <strong>collection</strong> <code>moliere</code> de 1669 : </p>
+<blockquote>
+<p>Un utilisateur peut filtrer des résultats en fonction de la valeur d'une métadonnée de son choix (<code>dc:date</code>).  </p>
+<p>Le paramètre DoTS <code>filter</code> est disponible pour tous les <em>endpoints</em>.<br />
+Il est possible de combiner différents filtres avec l’opérateur <code>AND</code>.</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/collection?id=moliere&filter=dc:date=1669" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/collection?id=moliere&filter=dc:date=1669</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<h2 id="endpoint-navigation"><em>Endpoint</em> <code>Navigation</code></h2>
+<p>Usages :</p>
+<ul>
+<li>Parcourir la structure éditoriale d’un document (la hiérarchie de ses fragments)</li>
+<li>Accéder aux métadonnées des fragments d’un document</li>
+<li>Filtrer la liste des fragments selon leurs métadonnées (fonctionnalité DoTS)</li>
+</ul>
+<h3 id="requetes-dts_1">Requêtes DTS</h3>
+<p>Lister les <strong>fragments</strong> de niveau 1 (les actes) du <strong>document</strong> <code>moliere_tartuffe</code> :</p>
+<blockquote>
+<p>La première partie de la réponse est un descriptif détaillée de la ressource (<code>moliere_tartuffe</code>) et de sa structure éditoriale (<code>citationTrees</code>).
+La liste des fragments qui suit est calculée en fonction de la valeur du paramètre <code>down</code>.</p>
+<p>Chaque fragment dispose d’un identifiant (<code>identifier</code>).</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&down=1" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&down=1</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Les requêtes de <code>Navigation</code> nécessitent 2 paramètres de requête : <code>ressource</code> (obligatoire) et un paramètre contextuel (<code>down</code>, <code>ref</code>, <code>start</code>/<code>end</code>).</p>
+</div>
+<p>Lister les <strong>fragments</strong> de niveau 1 et 2 (les actes et les scènes) du <strong>document</strong> <code>moliere_tartuffe</code> :</p>
+<blockquote>
+<p>Le paramètre <code>down</code> permet donc d'afficher les fragments d'un document depuis le niveau 1 <strong>jusqu'au</strong> niveau demandé dans <code>down</code>.</p>
+<p>La liste des fragments est <strong>plate</strong> et non hiérarchique. Le niveau hiérarchique de chaque fragment (acte ou scène) est inscrit en valeur de <code>level</code> (ici <code>1</code> ou <code>2</code>).</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&down=2" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&down=2</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Lister tous les fragments du <strong>document</strong> <code>moliere_tartuffe</code> :</p>
+<blockquote>
+<p>La valeur <code>-1</code> permet d'afficher tous les fragments d'un <strong>document</strong>.<br />
+Ici, <code>down=4</code> ou <code>down=-1</code> donnent la même réponse.</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&down=-1" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&down=-1</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Afficher les métadonnées du <strong>fragment</strong> dont l’identifiant est <em>a3</em> (acte 3) du <strong>document</strong> <code>moliere_tartuffe</code> :</p>
+<blockquote>
+<p>Le paramètre <code>ref</code> permet d'accéder aux métadonnées d'un fragment précis.</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&ref=a3" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&ref=a3</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Afficher les métadonnées du <strong>fragment</strong> dont l’identifiant est <em>a3</em> (acte 3) du <strong>document</strong> <code>moliere_tartuffe</code> ainsi que la liste de tous les <strong>fragments</strong> qu'il contient et leurs métadonnées :</p>
+<blockquote>
+<p>Il est possible de combiner les paramètres <code>ref</code> et <code>down</code>.</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&ref=a3&down=-1" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&ref=a3&down=-1</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Lister les <strong>fragments</strong> : du fragment dont l’identifiant est <em>a3-s2</em> (acte 3, scène 2) inclus au fragment <em>a3-s6</em> (acte 3, scène 6) inclus, et leurs métadonnées :</p>
+<blockquote>
+<p>Les paramètres <code>start</code> et <code>end</code> permettent d'accéder à tous les fragments dans un intervalle donné. </p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&start=a3-s2&end=a3-s6" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&start=a3-s2&end=a3-s6</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<!-- usage de tree non conforme à la spécification DTS
+La liste de tous les **fragments** de type _act_ dans **l'arbre de citation** parmi tous les **fragments** du **document** _Le Tartuffe_ de Molière :
+
+
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&tree=act&down=-1" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&tree=act&down=-1</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+-->
+
+<h3 id="options-dots_1">Options DoTS</h3>
+<p>Dans le <strong>document</strong> <code>moliere_tartuffe</code>, lister tous les <strong>fragments</strong> de niveau 3 (les tours de parole) dont la métadonnée <code>tei:role</code> est <em>Tartuffe</em> :</p>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&down=3&filter=tei:role=Tartuffe" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&down=3&filter=tei:role=Tartuffe</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Dans le <strong>document</strong> <code>moliere_tartuffe</code>, lister tous les fragments attribués à Tartuffe (https://www.wikidata.org/wiki/Q63492366) :</p>
+<blockquote>
+<p>Cette requête, plus robuste que la précédente (avec <code>down=-1</code>, inutile de connaître le niveau correspondant aux tours de parole), renvoie le même résultat.</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&down=-1&filter=character_QID=https://www.wikidata.org/wiki/Q63492366" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/navigation?resource=moliere_tartuffe&down=-1&filter=character_QID=https://www.wikidata.org/wiki/Q63492366</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<h2 id="endpoint-document"><em>Endpoint</em> <code>Document</code></h2>
+<p>Usages :</p>
+<ul>
+<li>Afficher un document complet (XML/TEI ou HTML)</li>
+<li>Afficher un fragment du document </li>
+<li>Afficher un intervalle de fragments du document </li>
+<li>Filtrer l’affichage des fragments selon leurs métadonnées (fonctionnalité DoTS)</li>
+</ul>
+<h3 id="requetes-dts_2">Requêtes DTS</h3>
+<p>Accéder au <strong>document</strong> complet au format XML/TEI : </p>
+<blockquote>
+<p>Pour DoTS, le format de la réponse est XML/TEI par défaut.</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Accéder au <strong>document</strong> complet au format HTML : </p>
+<blockquote>
+<p>Pour bénéficier d'une version HTML, c'est à l'éditeur de fournir les feuilles de transformation XSLT (cf. la page <a href="../advanced-rendering/">Fonctionnalités avancées</a>).</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe&mediaType=html" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe&mediaType=html</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Accéder au <strong>fragment</strong> dont l’identifiant est <code>l0012</code> du <strong>document</strong> <code>moliere_tartuffe</code> au format XML/TEI : </p>
+<blockquote>
+<p>On constate que le paramètre <code>ref</code> est disponible pour les <em>endpoints</em> <code>Navigation</code> ET <code>Document</code>. Les paramètres <code>start</code> et <code>end</code> le sont également.</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe&ref=l0012" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe&ref=l0012</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Accéder aux <strong>fragments</strong> du <strong>fragment</strong> <code>a1-s1_05</code> (niveau 3) au <strong>fragment</strong> <code>l0023</code> (niveau 4) au format XML/TEI : </p>
+<blockquote>
+<p>On constate que les bornes de l'intervalle peuvent être de niveaux différents : ici de niveau 3 (tour de parole) pour le premier fragment, et de niveau 4 (vers) pour le dernier.</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe&start=a1-s1_05&end=l0023" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe&start=a1-s1_05&end=l0023</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<h3 id="options-dots_2">Options DoTS</h3>
+<p>Dans le <strong>document</strong> <code>moliere_tartuffe</code>, afficher en XML/TEI tous les fragments attribués à Tartuffe (dont la métadonnée <code>tei:role</code> est "Tartuffe") :</p>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe&filter=tei:role=Tartuffe" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe&filter=tei:role=Tartuffe</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Dans le <strong>document</strong> <code>moliere_tartuffe</code>, afficher en HTML tous les fragments attribués à Orgon compris entre l'acte 1 et l'acte 3 :</p>
+<blockquote>
+<p>Le paramètre DoTS <code>filter</code> peut être combiné avec les autres paramètres DTS (ici avec <code>start</code>, <code>end</code> et <code>mediaType</code>).</p>
+</blockquote>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe&start=a1&end=a3&filter=tei:role=Orgon&mediaType=html" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/document?resource=moliere_tartuffe&start=a1&end=a3&filter=tei:role=Orgon&mediaType=html</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Afficher le <strong>fragment</strong> <code>r3587</code> (Troisième partie) du <strong>document</strong> <code>ENCPOS_1972_18</code>, en excluant les <strong>fragments "enfants"</strong> : </p>
+<div class="collapse-card" data-url="https://dots.chartes.psl.eu/demo/api/dts/document?resource=ENCPOS_1972_18&ref=r3587&excludeFragments=true" style="
+border-color: #ECF3FC !important;
+">
+    <div class="card-header" style="
+background-color: #ECF3FC !important;
+border-color: #61AFFD !important;
+border: 1px solid #61AFFD !important;
+ !important;" onclick="toggleCollapse(this)">
+        <span class="badge" style="
+background-color: #61AFFD !important;
+">GET</span>
+        <span class="title-header">https://dots.chartes.psl.eu/demo/api/dts/document?resource=ENCPOS_1972_18&ref=r3587&excludeFragments=true</span>
+        <span class="chevron" style="
+color: #61AFFD !important;
+background-color: #ECF3FC !important;
+"></span>
+    </div>
+    <div class="card-body" style="
+border-bottom: 1px solid #61AFFD !important;
+border-left: 1px solid #61AFFD !important;
+border-right: 1px solid #61AFFD !important;
+">
+    </div>
+</div>
+
+<p>Ce tour d'horizon de l'implémentation DoTS de l’API DTS montre qu'il est possible d'accèder très finement aux <strong>documents</strong>, aux <strong>fragments</strong> d'un document et à toutes leurs <strong>métadonnées</strong> grâce aux trois <em>endpoints</em> et à la combinaison de leurs paramètres.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div class="footer-container">
+                <div class="logo-footer-container">
+                    <a href="https://www.chartes.psl.eu/" target="blank"><img src="../assets/logo-chartes.png"
+                                                                              class="footer-logo-enc"/></a>
+                    <a href="https://projet.biblissima.fr/fr" target="blank"><img src="../assets/biblissima-logo.png"
+                                                                                  class="footer-logo-biblissima"/></a>
+                    <p class="footer-logo-enc">Biblissima+ bénéficie d’une aide de l'Etat gérée par l'ANR au titre du Programme d’investissements d’avenir intégré à France 2030, portant la référence ANR-21-ESRE-0005.</p>
+                </div>
+                <div class="md-footer-copyright">
+                    
+                    <div class="md-footer-copyright__highlight">
+                        © 2023-2024 DoTS
+                    </div>
+                    
+                    <span class="label-mkdocs-container">Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "content.code.annotate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="../js/custom.js"></script>
+      
+        <script src="../js/highlight.min.js"></script>
+      
+    
+  </body>
+</html>

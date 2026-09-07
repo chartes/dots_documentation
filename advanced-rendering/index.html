@@ -1,0 +1,635 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://dots-documentation.github.io/advanced-rendering/">
+      
+      
+        <link rel="prev" href="../dots-project-folder/">
+      
+      
+        <link rel="next" href="../cookbook/">
+      
+      
+      <link rel="icon" href="../assets/favicon-dots-circle.drawio.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.8">
+    
+    
+      
+        <title>Fonctionnalités avancées - DoTS documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f2e4d321.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+      <link rel="stylesheet" href="../css/stackoverflow-light.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fonctionnalites-avancees" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="DoTS documentation" class="md-header__button md-logo" aria-label="DoTS documentation" data-md-component="logo">
+      
+  <img src="../assets/dots-logo-retro.drawio.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DoTS documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fonctionnalités avancées
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DoTS documentation" class="md-nav__button md-logo" aria-label="DoTS documentation" data-md-component="logo">
+      
+  <img src="../assets/dots-logo-retro.drawio.png" alt="logo">
+
+    </a>
+    DoTS documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Présentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../publishing-workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ouvrir un corpus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dots-project-folder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dossier de dépôt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Fonctionnalités avancées
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Fonctionnalités avancées
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reponse-du-endpoint-document-en-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      Réponse du endpoint document en HTML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xslt-specifiques-et-surcharges" class="md-nav__link">
+    <span class="md-ellipsis">
+      XSLT spécifiques et surcharges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XSLT spécifiques et surcharges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xslt-pour-un-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      XSLT pour un document
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../cookbook/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Cookbook
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Cookbook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cookbook/periodical/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Périodiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cookbook/theater/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Théâtre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DTS API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dts-requests-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exemplier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reponse-du-endpoint-document-en-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      Réponse du endpoint document en HTML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xslt-specifiques-et-surcharges" class="md-nav__link">
+    <span class="md-ellipsis">
+      XSLT spécifiques et surcharges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XSLT spécifiques et surcharges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xslt-pour-un-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      XSLT pour un document
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="fonctionnalites-avancees">Fonctionnalités avancées</h1>
+<h2 id="reponse-du-endpoint-document-en-html">Réponse du endpoint <code>document</code> en HTML</h2>
+<p>Par défaut, le endpoint <code>document</code> fournit une réponse au format <code>TEI</code>. Cependant, DoTS permet également d'obtenir des réponses dans d'autres formats, notamment en HTML, grâce à des mécanismes de transformation.</p>
+<p>Pour utiliser, par exemple, les transformations XSLT de la communauté TEI, suivez ces étapes :</p>
+<ol>
+<li>Créez un dossier nommé <code>dots/webapp/static/transform</code>.</li>
+<li>Téléchargez les feuilles de style dans ce dossier, par exemple en utilisant <code>git clone https://github.com/TEIC/Stylesheets.git</code>.</li>
+<li>Ouvrez le module XQuery <code>/dots/repo/globals.xqm</code>.</li>
+<li>Modifiez la valeur de la variable <code>$G:defaultXslEnginePath</code> pour qu'elle pointe vers la XSL dans le dossier <code>transform</code> (généralement <code>Stylesheet/html/html.xsl</code>).</li>
+</ol>
+<p>Une fois ces étapes accomplies, le endpoint <code>document</code> avec le paramètre <code>mediaType=html</code> vous permettra d'afficher le document (ou le fragment) au format HTML.</p>
+<h2 id="xslt-specifiques-et-surcharges">XSLT spécifiques et surcharges</h2>
+<p>DoTS propose également un système avancé de gestion des XSLT, offrant les possibilités suivantes :</p>
+<ul>
+<li>Utiliser une feuille XSLT spécifique pour un document et / ou un projet.</li>
+<li>Utiliser une feuille XSLT qui importe et complète d'autres XSLTs (XSLT par défaut, par exemple).</li>
+</ul>
+<h3 id="xslt-pour-un-document">XSLT pour un document</h3>
+<p>Dans le dossier <code>dots/webapp/static/transform</code>, vous pouvez créer un sous-dossier portant le nom de la base de données du projet. Dans ce sous-dossier, vous pouvez ajouter des feuilles de style XSLT supplémentaires :</p>
+<ul>
+<li>Si une feuille de style est nommée <code>{$resourceId}.xsl</code>, elle sera utilisée prioritairement pour le document <code>resourceId</code>.</li>
+<li>Si une feuille de style est nommée <code>dbName.xsl</code>, elle sera utilisée prioritairement pour tous les documents du projet de la db <code>dbName</code>.</li>
+</ul>
+<p>Il est possible d'avoir une feuille de style pour le projet ainsi qu'une feuille de style spécifique pour un ou plusieurs documents du projet. De plus, ces feuilles de style peuvent importer d'autres XSL pour une personnalisation accrue.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div class="footer-container">
+                <div class="logo-footer-container">
+                    <a href="https://www.chartes.psl.eu/" target="blank"><img src="../assets/logo-chartes.png"
+                                                                              class="footer-logo-enc"/></a>
+                    <a href="https://projet.biblissima.fr/fr" target="blank"><img src="../assets/biblissima-logo.png"
+                                                                                  class="footer-logo-biblissima"/></a>
+                    <p class="footer-logo-enc">Biblissima+ bénéficie d’une aide de l'Etat gérée par l'ANR au titre du Programme d’investissements d’avenir intégré à France 2030, portant la référence ANR-21-ESRE-0005.</p>
+                </div>
+                <div class="md-footer-copyright">
+                    
+                    <div class="md-footer-copyright__highlight">
+                        © 2023-2024 DoTS
+                    </div>
+                    
+                    <span class="label-mkdocs-container">Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "content.code.annotate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="../js/custom.js"></script>
+      
+        <script src="../js/highlight.min.js"></script>
+      
+    
+  </body>
+</html>

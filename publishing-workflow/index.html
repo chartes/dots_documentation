@@ -1,0 +1,910 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://dots-documentation.github.io/publishing-workflow/">
+      
+      
+        <link rel="prev" href="../installation/">
+      
+      
+        <link rel="next" href="../dots-project-folder/">
+      
+      
+      <link rel="icon" href="../assets/favicon-dots-circle.drawio.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.8">
+    
+    
+      
+        <title>Ouvrir un corpus - DoTS documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f2e4d321.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+      <link rel="stylesheet" href="../css/stackoverflow-light.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ouvrir-un-corpus-avec-dots" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="DoTS documentation" class="md-header__button md-logo" aria-label="DoTS documentation" data-md-component="logo">
+      
+  <img src="../assets/dots-logo-retro.drawio.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DoTS documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ouvrir un corpus
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DoTS documentation" class="md-nav__button md-logo" aria-label="DoTS documentation" data-md-component="logo">
+      
+  <img src="../assets/dots-logo-retro.drawio.png" alt="logo">
+
+    </a>
+    DoTS documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Présentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ouvrir un corpus
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Ouvrir un corpus
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vocabulaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vocabulaire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparer-les-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Préparer les données
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Préparer les données">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preparer-le-dossier-de-depot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Préparer le dossier de dépôt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declarer-les-passages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déclarer les passages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-dun-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestion d’un projet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestion d’un projet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creation-dun-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Création d’un projet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creation-de-nouvelles-collections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Création de nouvelles collections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suppression-dun-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suppression d’un projet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dots-project-folder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dossier de dépôt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-rendering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fonctionnalités avancées
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../cookbook/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Cookbook
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Cookbook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cookbook/periodical/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Périodiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cookbook/theater/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Théâtre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DTS API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dts-requests-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exemplier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vocabulaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vocabulaire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparer-les-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Préparer les données
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Préparer les données">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preparer-le-dossier-de-depot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Préparer le dossier de dépôt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declarer-les-passages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déclarer les passages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-dun-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestion d’un projet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestion d’un projet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creation-dun-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Création d’un projet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creation-de-nouvelles-collections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Création de nouvelles collections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suppression-dun-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suppression d’un projet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ouvrir-un-corpus-avec-dots">Ouvrir un corpus avec DoTS</h1>
+<p>Pour publier une collection de documents <a href="https://www.tei-c.org/" target="_blank">TEI</a>, il suffit de charger un <em>dossier de dépôt</em> conforme aux recommandations DoTS.</p>
+<p>Cette page décrit le <em>workflow</em> de publication, les recommandations DoTS de structuration de ce <em>dossier de dépôt</em>, et la procédure de création et de gestion d'un <em>projet</em>.</p>
+<h2 id="introduction">Introduction</h2>
+<h3 id="vocabulaire">Vocabulaire</h3>
+<p><strong>Projet</strong>. Un "projet" est une collection DTS de premier niveau, un corpus éditorial défini. Par exemple, il est possible de donner accès via un même endpoint DTS à des correspondances ET à des pièces de théâtre : on distinguera donc le projet <em>Correspondance</em> et le projet <em>Théâtre</em>.</p>
+<p><strong>Dossier de dépôt</strong> ou <strong><em>Import folder</em></strong>. Pour être correctement chargé en base avec les outils DoTS, un <em>projet</em> doit être structuré dans un dossier conformément aux recommandations de DoTS. Ce dossier est désigné dans la documentation par l’expression "dossier de dépôt".</p>
+<p><strong>Base de données projet</strong> ou <strong>DB projet</strong>. Chaque <em>projet</em> (chaque collection DTS de premier niveau) est importé sous la forme d’une base de données BaseX. Les projets <em>Correspondance</em> et <em>Théâtre</em> sont chargés sous la forme de deux bases de données distinctes, par exemple respectivement <code>letters</code> et <code>theater</code>.</p>
+<h3 id="workflow">Workflow</h3>
+<p><img alt="Screenshot" src="../img/dots_workflow.png" /></p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>DoTS ne fournit pas d'outil pour passer d'un dossier de travail utilisateur à un dossier de dépôt. Cependant, la structure de ce dossier de dépôt est conçue pour faciliter le travail éditorial. Pour optimiser le <em>workflow</em>, nous recommandons donc de travailler autant que possible à l’édition des sources XML/TEI directement dans le dossier de dépôt.</p>
+</details>
+<h2 id="preparer-les-donnees">Préparer les données</h2>
+<h3 id="preparer-le-dossier-de-depot">Préparer le dossier de dépôt</h3>
+<p>Un <a href="../dots-project-folder/">dossier de dépôt</a> contient :</p>
+<ul>
+<li><strong>obligatoirement</strong> les sources XML/TEI du projet (dossier <code>data/</code>), organisées selon la hiérarchie de votre choix.</li>
+<li><strong>optionnellement</strong> les métadonnées décrivant les collections, documents et passages (dossier <code>metadata/</code>). Si présent, le document XML <code>dots_metadata_mapping.xml</code> est obligatoire.</li>
+<li><strong>optionnellement</strong> un <code>README.md</code> documentant le dossier de dépôt.</li>
+</ul>
+<details class="info" open="open">
+<summary>Modèle</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>nom_projet/                         # Racine du dossier de dépôt
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    data/                           # OBLIGATOIRE. Fichiers TEI en dossiers de collection
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        collection_1/               # Collection 1
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            file_1.xml              # file_1 appartient par défaut à la collection 1
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>            file_2.xml              # idem
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        collection_2/               # Collection 2
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>            file_100.xml            # file_100 appartient par défaut à la collection 2
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>            file_101.xml            # idem
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    metadata/                       # OPTIONNEL. Métadonnées des ressources
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        dots_metadata_mapping.xml   # Déclaration du chemin des métadonnées
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        metadata_1.tsv              # Un fichier de métadonnées
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        metadata_2.tsv              # idem
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    README.md                       # OPTIONNEL. Documentation (plan de nommage, etc.)
+</span></code></pre></div>
+</details>
+<!--
+- Racine du projet – `nom_projet/`. Le nom de ce dossier est libre. Au chargement en base, vous pourrez spécifier le nom de la base de données BaseX, et l’identifiant DTS attribué à la collection racine. Vous pourrez aussi lui attribuer un titre.
+
+- Les documents XML/TEI – `data/`. Ce dossier est **obligatoire**. Il contient les sources XML/TEI de votre *<a>projet</a>* organisées selon la hiérarchie de votre choix. Cette hiérarchie représente les collections par défaut de votre *projet*. Par exemple, ici, les documents `file_1.xml` et `file_2.xml` appartiennent à la collection `collection_1`.
+
+- Les métadonnées – `metadata/`. Ce dossier est **optionnel**. S'il est présent, il doit contenir *a minima* un document XML `dots_metadata_mapping.xml` qui permet de déclarer finement où se trouvent les métadonnées de collections et / ou de documents. 
+-->
+
+<h3 id="declarer-les-passages">Déclarer les passages</h3>
+<p>L'utilisateur peut décrire la structure éditoriale de chaque document et définir l'accès aux passages. Il doit pour cela faire usage de l'élément TEI <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-citeStructure.html" target="_blank"><code>tei:citeStructure</code></a> (voir <a href="../dots-project-folder/#passages">dossier de dépôt</a>).</p>
+<h3 id="exemples">Exemples</h3>
+<p>Pour bien illustrer toutes les potentialités offertes par DTS et DoTS, un <a href="../cookbook/">cookbook</a> est disponible, avec plusieurs exemples :</p>
+<ul>
+<li><a href="../cookbook/periodical/">publier un périodique</a></li>
+<li><a href="../cookbook/theater/">publier des pièces de théâtre</a></li>
+</ul>
+<h2 id="gestion-dun-projet">Gestion d’un projet</h2>
+<p>Pour lancer les commandes, il est nécessaire de se placer dans le dossier <code>dots</code>.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>path/to/dots
+</span></code></pre></div>
+<h3 id="creation-dun-projet">Création d’un projet</h3>
+<p>Cette commande crée un projet DoTS à partir d’un dossier de dépôt.</p>
+<div class="language-Bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>usage:<span class="w"> </span>bash<span class="w"> </span>scripts/project_create.sh
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span>--basex_path<span class="w"> </span>string
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span>--project_dir_path<span class="w"> </span>string
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span>--top_collection_id<span class="w"> </span>string
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span>--db_name<span class="w"> </span>string<span class="w"> </span>
+</span></code></pre></div>
+<p>Arguments :</p>
+<ul>
+<li><code>basex_path</code> : chemin absolu en local vers le répertoire <code>bin</code> de BaseX</li>
+<li><code>project_dir_path</code> : chemin absolu en local vers le <em>dossier de dépôt</em> du projet</li>
+<li><code>top_collection_id</code> : identifiant DTS de la collection racine du <em>projet</em></li>
+<li><code>db_name</code> : nom de la base de données du <em>projet</em></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>La base de données du <em>projet</em> ne DOIT PAS être ouverte dans le GUI BaseX.</strong></p>
+</div>
+<!-- [README.md](../README.md) -->
+
+<p>Exemple : </p>
+<div class="language-Bash copy highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>bash<span class="w"> </span>scripts/project_create.sh<span class="w"> </span>--basex_path<span class="w"> </span><span class="s1">&#39;/path/to/basex/bin&#39;</span><span class="w"> </span>--project_dir_path<span class="w"> </span><span class="s1">&#39;/path/to/import/folder&#39;</span><span class="w"> </span>--top_collection_id<span class="w"> </span><span class="s1">&#39;id&#39;</span><span class="w"> </span>--db_name<span class="w"> </span><span class="s1">&#39;name&#39;</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>La commande bash suivante permet de mettre à jour un projet DoTS en le supprimant puis en le recréant :
+<div class="language-Bash copy highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>bash<span class="w"> </span>scripts/project_create.sh<span class="w"> </span>--basex_path<span class="w"> </span><span class="s1">&#39;/path/to/basex/bin&#39;</span><span class="w"> </span>--project_dir_path<span class="w"> </span><span class="s1">&#39;/path/to/import/folder&#39;</span><span class="w"> </span>--top_collection_id<span class="w"> </span><span class="s1">&#39;id&#39;</span><span class="w"> </span>--db_name<span class="w"> </span><span class="s1">&#39;name&#39;</span><span class="w"> </span>--cleanOption<span class="w"> </span><span class="s1">&#39;true&#39;</span><span class="w"> </span>--delete<span class="w"> </span><span class="s1">&#39;true&#39;</span>
+</span></code></pre></div></p>
+</div>
+<p>NB. La base de données <em>projet</em> est créée en conservant la structure du dossier de dépôt en collections et sous-collections. </p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Les ressources de votre projet sont désormais décrites et accessibles via les endpoints DTS fournis par DoTS. Les <em>endpoints</em> ouverts sont documentés dans la section <a href="../api/">DTS API</a>.</p>
+</div>
+<h3 id="creation-de-nouvelles-collections">Création de nouvelles collections</h3>
+<p>DoTS permet d’associer un document à plusieurs collections. Pour un projet, cette commande permet de créer de nouvelles collection et d’y associer des documents.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Les documents doivent être déjà enregistrés dans la base de données du projet.</strong></p>
+</div>
+<p><div class="language-Bash copy highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>bash<span class="w"> </span>scripts/custom_collections.sh<span class="w"> </span>--basex_path<span class="w"> </span>string<span class="w"> </span>--collections_tsv_path<span class="w"> </span>string
+</span></code></pre></div>
+Argument :</p>
+<ul>
+<li><code>basex_path</code> : chemin absolu en local vers le répertoire <code>bin</code> de BaseX</li>
+<li><code>collections_tsv_path</code> : chemin absolu en local vers le fichier TSV décrivant ces collections. Ce fichier doit être conforme aux recommandations – voir <a href="http://127.0.0.1:8000/dots-project-folder/#autres-collections">Dossier de dépôt/Autres collections</a>.</li>
+</ul>
+<h3 id="suppression-dun-projet">Suppression d’un projet</h3>
+<p>Cette commande efface des registres DoTS les ressources du projet et supprime optionnellement sa base de données.</p>
+<div class="language-Bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>usage:<span class="w"> </span>bash<span class="w"> </span>scripts/project_delete.sh
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span>--basex_path<span class="w"> </span>string
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span>--db_name<span class="w"> </span>string<span class="w"> </span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span>--db_delete<span class="w"> </span>boolean
+</span></code></pre></div>
+<p>Arguments :</p>
+<ul>
+<li><code>basex_path</code> : chemin absolu en local vers le répertoire <code>bin</code> de BaseX</li>
+<li><code>db_name</code> : nom de la base de données du <em>projet</em></li>
+<li><code>db_delete</code> : booléen<ul>
+<li><code>true</code> (<em>default</em>): la base de données du projet est supprimée</li>
+<li><code>false</code>: la base de données du projet est conservée (seules les registres sont mis à jour).</li>
+</ul>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>La base de données du <em>projet</em> ne DOIT PAS être ouverte dans le GUI BaseX.</strong></p>
+</div>
+<p>Exemple :</p>
+<div class="language-Bash copy highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>bash<span class="w"> </span>scripts/project_delete.sh<span class="w"> </span>--basex_path<span class="w"> </span><span class="s1">&#39;/path/to/basex/bin&#39;</span><span class="w"> </span>--db_name<span class="w"> </span><span class="s1">&#39;name&#39;</span>
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div class="footer-container">
+                <div class="logo-footer-container">
+                    <a href="https://www.chartes.psl.eu/" target="blank"><img src="../assets/logo-chartes.png"
+                                                                              class="footer-logo-enc"/></a>
+                    <a href="https://projet.biblissima.fr/fr" target="blank"><img src="../assets/biblissima-logo.png"
+                                                                                  class="footer-logo-biblissima"/></a>
+                    <p class="footer-logo-enc">Biblissima+ bénéficie d’une aide de l'Etat gérée par l'ANR au titre du Programme d’investissements d’avenir intégré à France 2030, portant la référence ANR-21-ESRE-0005.</p>
+                </div>
+                <div class="md-footer-copyright">
+                    
+                    <div class="md-footer-copyright__highlight">
+                        © 2023-2024 DoTS
+                    </div>
+                    
+                    <span class="label-mkdocs-container">Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "content.code.annotate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="../js/custom.js"></script>
+      
+        <script src="../js/highlight.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,254 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "DoTS - OpenAPI 3.0",
+    "description": "**Documentation and specification of the [DTS API](https://distributed-text-services.github.io/specifications/) implementation by [DoTS](https://github.com/chartes/dots).** \n\n  DoTS is a suite of XQuery tools in [BaseX](https://basex.org/) designed to provide a resolver for the DTS API. \n \n This API offers an access to the endpoints :\n * Base API Endpoint \n * collection (navigating collections) \n * navigation (list of passages accessible for navigation from a given reference within a resource) \n * document (acces to the content of document) ",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "version": "0.1.0"
+  },
+  "externalDocs": {
+    "description": "For more documentation on DoTS project, see https://github.com/chartes/dots_documentation",
+    "url": "https://github.com/chartes/dots_documentation"
+  },
+  "servers": [
+    {
+      "url": "https://dots.chartes.psl.eu/demo/api/"
+    }
+  ],
+  "paths": {
+    "/dts": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "Base DTS API endpoint.",
+        "operationId": "read_entrypoint_get",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "context": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dts/collection": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "Allow to navigate into resources (collection or document).",
+        "operationId": "read_collections_get",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "nav",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "children",
+                "parents"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dts/navigation": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "List the passages that are accessible for navigation from a given reference within a resource.",
+        "operationId": "read_navigation_get",
+        "parameters": [
+          {
+            "name": "resource",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ref",
+            "in": "query",
+            "required": false,
+            "description": "NOT used with start and end",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "required": false,
+            "description": "NOT used if a ref is specified, requires end as well",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "required": false,
+            "description": "NOT used if a ref is specified, requires start as well",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "down",
+            "in": "query",
+            "required": false,
+            "description": "mandatory if neither ref nor start/end are specified",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dts/document": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "Provide access to all or part of the document content.",
+        "operationId": "read_document_get",
+        "parameters": [
+          {
+            "name": "resource",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ref",
+            "in": "query",
+            "required": false,
+            "description": "NOT used with start and end",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "required": false,
+            "description": "NOT used if a ref is specified, requires end as well",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "required": false,
+            "description": "NOT used if a ref is specified, requires start as well",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "tree",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "mediaType",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "html",
+                "xml"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  }
+}

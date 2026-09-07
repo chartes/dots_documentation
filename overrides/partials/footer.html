@@ -1,0 +1,24 @@
+{% import "partials/language.html" as lang with context %}
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div class="footer-container">
+                <div class="logo-footer-container">
+                    <a href="https://www.chartes.psl.eu/" target="blank"><img src="{{ base_url }}/assets/logo-chartes.png"
+                                                                              class="footer-logo-enc"/></a>
+                    <a href="https://projet.biblissima.fr/fr" target="blank"><img src="{{ base_url }}/assets/biblissima-logo.png"
+                                                                                  class="footer-logo-biblissima"/></a>
+                    <p class="footer-logo-enc">Biblissima+ bénéficie d’une aide de l'Etat gérée par l'ANR au titre du Programme d’investissements d’avenir intégré à France 2030, portant la référence ANR-21-ESRE-0005.</p>
+                </div>
+                <div class="md-footer-copyright">
+                    {% if config.copyright %}
+                    <div class="md-footer-copyright__highlight">
+                        {{ config.copyright }}
+                    </div>
+                    {% endif %}
+                    <span class="label-mkdocs-container">Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

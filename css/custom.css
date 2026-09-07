@@ -1,0 +1,158 @@
+:root {
+    --md-details-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="chevron-svg"  d="M8.59 16.58 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42Z"/></svg>');
+}
+
+.collapse-card {
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    border-bottom: none !important;
+    padding: 10px 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.badge {
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: .64rem;
+    font-weight: bold;
+}
+
+.title-header {
+    font-weight: bold;
+    font-size: .64rem;
+}
+
+.card-body {
+    font-size: .65rem;
+    background-color: white;
+    overflow: auto;
+    max-height: 400px;
+    padding: 10px 15px;
+}
+
+.chevron {
+    background-image: var(--md-details-icon);
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+    margin-left: auto;
+    float: right;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+
+.chevron.rotated {
+    transform: rotate(90deg);
+}
+
+/* header */
+
+.md-header__button  {
+  height: 10%;
+  width: 10%;
+}
+
+.md-header__button img {
+  height: 80% !important;
+  width: 80% !important;
+}
+
+
+/* footer */
+
+.md-footer {
+    margin-top: 20px;
+    background-color: #3F51B5 !important;
+    box-shadow: 0 0 20px #0000001a !important;
+}
+
+.md-footer-meta {
+    background-color: #ffffff !important;
+    border-radius: 210px 0 250px 0;
+    border: 2px solid #3F51B5;
+}
+
+.logo-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-logo-biblissima {
+    width: 17rem;
+    height: 10rem;
+    margin-right: 3px;
+}
+
+.footer-logo-enc {
+    width: 8rem;
+    height: 10rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-container {
+    color: #000000 !important;
+}
+
+.md-footer-copyright__highlight {
+    color: #000000 !important;
+    font-size: 0.7rem !important;
+}
+
+.label-mkdocs-container {
+    font-size: 0.7rem;
+}
+
+.label-mkdocs-container > a {
+    color: #606060 !important;
+}
+
+.label-mkdocs-container > a:hover {
+    color: #000000 !important;
+}
+
+blockquote {
+    font-size: 0.7rem;
+}
+
+/* API Swagger overrides styles */
+
+
+
+
+
+div.info .md-typeset pre > code {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+div.operation-tag-content pre > code {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+
+div.operation-tag-content .language-json > .hljs-attr {
+    color: white !important;
+}
+
+
+h1#documentation-home:first-child {
+  display: none;
+}
